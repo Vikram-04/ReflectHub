@@ -11,6 +11,10 @@
   margin-bottom: 0.5rem;
 }
 
+.margin-top-lg {
+    margin-top: 3rem;
+}
+
 .center-text {
   text-align: center;
 }

@@ -32,7 +32,7 @@
 
     <!-- heading -->
     <h1 class="center-text margin-bottom-lg">Share Your Event Reflections</h1>
-
+    <div class="d-flex gap-5">
     <!-- left side role filter (fake position for now) -->
     <div>
       <p><strong>Search posts by role:</strong></p>
@@ -46,11 +46,17 @@
 
     <!-- post feed placeholder -->
     <div id="postsContainer" class="margin-bottom-lg">
-      <!-- posts will show up here -->
+      <!-- posts-->
+       <div class="post-box margin-bottom-lg">
+        <h4>Priya (Volunteer)</h4>
+        <p>Volunteering at the TechFest 2025 was a whirlwind experience! I learned how to coordinate with speakers, manage time under pressure, and even made a few friends. Totally worth it!</p>
+        </div>
+
+    </div>
     </div>
 
     <!-- form to submit experience -->
-    <form id="experienceForm">
+    <form id="experienceForm" class="margin-top-lg">
       <input type="text" id="nameInput" class="custom-input margin-bottom-sm" placeholder="Your name (optional)">
       <textarea id="messageInput" class="custom-input margin-bottom-sm" placeholder="Write your experience..." required></textarea>
       <select id="roleInput" class="custom-input margin-bottom-sm">
