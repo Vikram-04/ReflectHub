@@ -39,17 +39,17 @@
 
     <div class="container section-spacing">
       <!-- heading -->
-      <h1 class="center-text margin-bottom-lg">Share Your Event Reflections</h1>
-      <div class="d-flex gap-5">
+      <h1 class="heading">Share Your Event Reflections</h1>
+      <div class="flex-layout left-filters">
         <!-- left side role filter (fake position for now) -->
         <div>
           <p><strong>Search posts by role:</strong></p>
           <!-- these will act like filters maybe later -->
-          <input type="checkbox" /> Attendee<br />
-          <input type="checkbox" /> Host<br />
-          <input type="checkbox" /> Volunteer<br />
-          <input type="checkbox" /> Organizer<br />
-          <input type="checkbox" /> Club Leader<br />
+          <label><input type="checkbox" /> Attendee</label><br />
+          <label><input type="checkbox" /> Host</label><br />
+          <label><input type="checkbox" /> Volunteer</label><br />
+          <label><input type="checkbox" /> Organizer</label><br />
+          <label><input type="checkbox" /> Club Leader</label><br />
         </div>
 
         <!-- post feed placeholder -->
@@ -80,7 +80,7 @@
           placeholder="Write your experience..."
           required
         ></textarea>
-        <select id="roleInput" class="custom-input margin-bottom-sm">
+        <select id="roleInput" class="custom-input margin-bottom-sm" required>
           <option value="">Your role</option>
           <option value="Attendee">Attendee</option>
           <option value="Host">Host</option>
