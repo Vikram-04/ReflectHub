@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shoutout Wall</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- using bootstrap for styling fast -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <h1>Student Shoutout Wall</h1>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Student Shoutout Wall</h1>
 
-  <form id="shoutoutForm">
-    <input type="text" id="nameInput" placeholder="Your name (optional)">
-    <textarea id="messageInput" placeholder="Write your shoutout..." required></textarea>
-    <button type="submit">Post Shoutout</button>
-  </form>
+    <form id="shoutoutForm" class="mb-4">
+      <input type="text" id="nameInput" class="form-control mb-2" placeholder="Your name (optional)">
+      <textarea id="messageInput" class="form-control mb-2" placeholder="Write your shoutout here..." required></textarea>
+      <button type="submit" class="btn btn-primary w-100">Post Shoutout</button>
+    </form>
 
-  <div id="shoutoutsContainer"></div>
+    <div id="shoutoutsContainer"></div> <!-- shoutouts will show up here -->
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
 
