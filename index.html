@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ReflectHub</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- bootstrap for fast layout and components -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReflectHub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- bootstrap for fast layout and components -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- This the top nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
+      <a class="navbar-brand" href="index.html">ReflectHub</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item me-2">
+            <select class="form-select inline-block">
+              <option selected>See posts from</option>
+              <option>Attendee</option>
+              <option>Host</option>
+              <option>Volunteer</option>
+              <option>Organizer</option>
+              <option>Club Leader</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- top nav -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
-    <a class="navbar-brand" href="index.html">ReflectHub</a>
-    <!-- just dummy links for now -->
-    <div class="ms-auto">
-      <select class="form-select me-2" style="display: inline-block; width: auto;">
-        <option selected>See posts from</option>
-        <option>Attendee</option>
-        <option>Host</option>
-        <option>Volunteer</option>
-        <option>Organizer</option>
-        <option>Club Leader</option>
-      </select>
-      <a class="nav-link d-inline text-white" href="#">Rules</a>
-      <a class="nav-link d-inline text-white" href="#">About Us</a>
-    </div>
-  </nav>
-
-  <div class="container section-spacing">
-
-    <!-- heading -->
-    <h1 class="center-text margin-bottom-lg">Share Your Event Reflections</h1>
-    <div class="d-flex gap-5">
-    <!-- left side role filter (fake position for now) -->
-    <div>
-      <p><strong>Search posts by role:</strong></p>
-      <!-- these will act like filters maybe later -->
-      <label><input type="checkbox" /> Attendee</label><br>
-      <label><input type="checkbox" /> Host</label><br>
-      <label><input type="checkbox" /> Volunteer</label><br>
-      <label><input type="checkbox" /> Organizer</label><br>
-      <label><input type="checkbox" /> Club Leader</label><br>
-    </div>
-
-    <!-- post feed placeholder -->
-    <div id="postsContainer" class="margin-bottom-lg">
-      <!-- posts-->
-       <div class="post-box margin-bottom-lg">
-        <h4>Priya (Volunteer)</h4>
-        <p>Volunteering at the TechFest 2025 was a whirlwind experience! I learned how to coordinate with speakers, manage time under pressure, and even made a few friends. Totally worth it!</p>
+    <div class="container section-spacing">
+      <!-- heading -->
+      <h1 class="center-text margin-bottom-lg">Share Your Event Reflections</h1>
+      <div class="d-flex gap-5">
+        <!-- left side role filter (fake position for now) -->
+        <div>
+          <p><strong>Search posts by role:</strong></p>
+          <!-- these will act like filters maybe later -->
+          <input type="checkbox" /> Attendee<br />
+          <input type="checkbox" /> Host<br />
+          <input type="checkbox" /> Volunteer<br />
+          <input type="checkbox" /> Organizer<br />
+          <input type="checkbox" /> Club Leader<br />
         </div>
 
+        <!-- post feed placeholder -->
+        <div id="postsContainer" class="margin-bottom-lg">
+          <!-- posts-->
+          <div class="post-box margin-bottom-lg">
+            <h4>Priya (Volunteer)</h4>
+            <p>
+              Volunteering at the TechFest 2025 was a whirlwind experience! I
+              learned how to coordinate with speakers, manage time under
+              pressure, and even made a few friends. Totally worth it!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- form to submit experience -->
+      <form id="experienceForm" class="margin-top-lg">
+        <input
+          type="text"
+          id="nameInput"
+          class="custom-input margin-bottom-sm"
+          placeholder="Your name (optional)"
+        />
+        <textarea
+          id="messageInput"
+          class="custom-input margin-bottom-sm"
+          placeholder="Write your experience..."
+          required
+        ></textarea>
+        <select id="roleInput" class="custom-input margin-bottom-sm">
+          <option value="">Your role</option>
+          <option value="Attendee">Attendee</option>
+          <option value="Host">Host</option>
+          <option value="Volunteer">Volunteer</option>
+          <option value="Organizer">Organizer</option>
+          <option value="Club Leader">Club Leader</option>
+        </select>
+        <button type="submit" class="custom-btn">Post Experience</button>
+      </form>
     </div>
-    </div>
 
-    <!-- form to submit experience -->
-    <form id="experienceForm" class="margin-top-lg">
-      <input type="text" id="nameInput" class="custom-input margin-bottom-sm" placeholder="Your name (optional)">
-      <textarea id="messageInput" class="custom-input margin-bottom-sm" placeholder="Write your experience..." required></textarea>
-      <select id="roleInput" class="custom-input margin-bottom-sm">
-        <option value="">Your role</option>
-        <option value="Attendee">Attendee</option>
-        <option value="Host">Host</option>
-        <option value="Volunteer">Volunteer</option>
-        <option value="Organizer">Organizer</option>
-        <option value="Club Leader">Club Leader</option>
-      </select>
-      <button type="submit" class="custom-btn">Post Experience</button>
-    </form>
-
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
