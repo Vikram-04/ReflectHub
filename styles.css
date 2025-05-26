@@ -111,9 +111,13 @@ nav {
 }
 
 #about-us{
+  padding: 2%; 
   margin-left: 7%;
   margin-right: 7%;
+  margin-bottom: 1.5rem;
   background-color: #8c9eb0;
 }
+
+
 
 
