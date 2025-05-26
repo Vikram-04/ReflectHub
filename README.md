@@ -6,11 +6,10 @@
 
 - **Post Event Reflections** anonymously or with your name
 - **Role-Based Categorization** for Attendee, Host, Volunteer, Organizer, and Club Leader
-- **Live Filtering (Future scope)** for browsing posts by role
 
 ## Live Preview
 
-[ReflectHub Demo](#) https://vikram-04.github.io/CSOC_hackathon/
+ReflectHub Demo: (#) https://vikram-04.github.io/CSOC_hackathon/
 
 ## Tech Stack
 
@@ -22,5 +21,6 @@
 
 - **Role-based filtering**
 - **Event-based categorization**
+- **Live Filtering for browsing posts by role**
 - **Backend integration for real data persistence**
 - **Like and comment features on posts**
