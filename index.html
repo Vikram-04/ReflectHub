@@ -38,31 +38,42 @@
     </nav>
 
     <div class="container section-spacing">
-      <!-- heading -->
       <h1 class="heading">Share Your Event Reflections</h1>
-      <div class="flex-layout left-filters">
-        <!-- left side role filter (fake position for now) -->
-        <div>
-          <p><strong>Search posts by role:</strong></p>
-          <!-- these will act like filters maybe later -->
-          <label><input type="checkbox" /> Attendee</label><br />
-          <label><input type="checkbox" /> Host</label><br />
-          <label><input type="checkbox" /> Volunteer</label><br />
-          <label><input type="checkbox" /> Organizer</label><br />
-          <label><input type="checkbox" /> Club Leader</label><br />
-        </div>
-
-        <!-- post feed placeholder -->
-        <div id="postsContainer" class="margin-bottom-lg">
-          <!-- posts-->
-          <div class="post-box margin-bottom-lg">
-            <h4>Priya (Volunteer)</h4>
-            <p>
-              Volunteering at the TechFest 2025 was a whirlwind experience! I
-              learned how to coordinate with speakers, manage time under
-              pressure, and even made a few friends. Totally worth it!
-            </p>
+      <div class="row flex-layout left-filters">
+        <div class="col-md-3 mb-4">
+          <div class="card p-3 shadow-sm">
+            <p><strong>Search posts by role:</strong></p>
+            <label><input type="checkbox" /> Attendee</label><br />
+            <label><input type="checkbox" /> Host</label><br />
+            <label><input type="checkbox" /> Volunteer</label><br />
+            <label><input type="checkbox" /> Organizer</label><br />
+            <label><input type="checkbox" /> Club Leader</label><br />
           </div>
+        </div>
+        <!-- Posts -->
+        <div class="col-md-9">
+          <div id="postsContainer" class="d-flex flex-column gap-4">
+        <!-- posts-->
+            <div class="card p-3 bg-light border-left-primary">
+              <h5>Jon Snow (Volunteer)</h5>
+              <p>Volunteering at the TechFest 2025 was a whirlwind experience...</p>
+            </div>
+
+            <div class="card p-3 bg-light border-left-success">
+              <h5>Ned Stark (Host)</h5>
+              <p>Hosting my first webinar was terrifying and amazing. I learned...</p>
+            </div>
+
+            <div class="card p-3 bg-light border-left-warning">
+              <h5>Vikram (Attendee)</h5>
+              <p>The speaker sessions were thought-provoking and really helped...</p>
+            </div>
+
+            <div class="card p-3 bg-light border-left-danger">
+              <h5>Daenerys Targarean (Organizer)</h5>
+              <p>Managing 15 volunteers and 3 speakers was tough but fulfilling...</p>
+            </div>
+
         </div>
       </div>
 
