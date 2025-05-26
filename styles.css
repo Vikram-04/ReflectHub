@@ -60,19 +60,10 @@ nav {
   align-items: flex-start;
 }
 
-.left-filters {
-  width:20rem;
-  flex: 0 0 220px; 
-  background: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-}
 
 #postsContainer {
   flex: 1; 
   min-width: 300px;
-  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   padding: 20px;
@@ -87,18 +78,33 @@ nav {
   margin-bottom: 40px;
 }
 
-.border-left-primary {
-  border-left: 5px solid #0d6efd;
-}
-.border-left-success {
-  border-left: 5px solid #198754;
-}
-.border-left-warning {
-  border-left: 5px solid #ffc107;
-}
-.border-left-danger {
-  border-left: 5px solid #dc3545;
+.bg-volunteer{
+    background-color: #e6e3e8;
+    border-left: 5px solid #0d6efd;
 }
 
+.bg-host {
+  background-color: #e0f0ff;
+    border-left: 5px solid #198754;
 
+}
+.bg-club-leader {
+  background-color: #e6f4ea;
+    border-left: 5px solid #ffc107;
+
+}
+.bg-attendee {
+  background-color: #fff9e5;
+    border-left: 5px solid #dc3545;
+
+}
+.bg-organizer {
+  background-color: #fdecea;
+  border-left: 5px solid #ecf011;
+
+}
+
+.post{
+  width:5rem;
+}
 
